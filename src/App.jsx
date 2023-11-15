@@ -1,10 +1,13 @@
 import "./App.css";
+import Hero from "./Hero/Hero";
+import Navbar from "./NavBar/Navbar";
 
 function App() {
   return (
-    <h1 className="text-3xl font-bold text-red-500 underline text-center">
-      Hellow World!
-    </h1>
+    <div className="flex flex-col relative">
+      <Navbar/>
+      <Hero/>
+    </div>
   );
 }
 
