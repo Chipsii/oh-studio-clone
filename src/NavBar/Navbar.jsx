@@ -16,23 +16,24 @@ const NavBtn = ({ title, isActive, onClick }) => {
 const Navbar = () => {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleBtnClick = (index) => {
+  const handleButtonClick = (index) => {
     setActiveIndex(index);
   };
-  const button = [
+
+  const buttons = [
     { title: "Home" },
     { title: "Profile" },
     { title: "Contact" },
   ];
 
   return (
-    <nav>
-      {button.map((button, index) => (
+    <nav className="flex fixed translate-x-[-50%] left-[50%] mx-auto top-5 py-1 px-1 z-50 bg-[#e8e5e480]/50 backdrop-blur-lg  rounded-full text-[14px] max-w-[280px] lg:max-w-[300px] gap-[4px] lg:top-8">
+      {buttons.map((button, index) => (
         <NavBtn
           key={index}
           title={button.title}
           isActive={activeIndex === index}
-          onClick={() => handleBtnClick(index)}
+          onClick={() => handleButtonClick(index)}
         />
       ))}
     </nav>

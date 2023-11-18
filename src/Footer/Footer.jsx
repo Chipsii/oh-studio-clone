@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="flex flex-col md:flex-row items-center gap-[10px] md:justify-between px-14 pt-[40px] pb-[80px] md:pb-[34px]">
+    <footer className="flex flex-col md:flex-row items-center gap-[10px]  md:justify-between px-14 pt-[40px] pb-[80px] md:pb-[34px]">
       <div className="flex flex-col gap-[12px] md:flex-row items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -55,7 +55,7 @@ const Footer = () => {
           </g>
         </svg>
 
-        <h4 className="text-[14px] md:w-40">© Chipsi 2023</h4>
+        <h4 className="text-[14px] md:w-40">© Oli Harris 2023</h4>
       </div>
       <div className="flex gap-[15px] text-[14px]">
         <h4 className="hover:text-black/50 cursor-pointer">Twitter</h4>

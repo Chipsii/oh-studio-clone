@@ -1,5 +1,5 @@
-import { useAnimation, motion } from "framer-motion";
 import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const Contact = () => {
@@ -24,7 +24,7 @@ const Contact = () => {
     visible: {
       opacity: 1,
       transition: {
-        straggerChildren: 0.2,
+        staggerChildren: 0.2,
       },
     },
   };
@@ -63,18 +63,18 @@ const Contact = () => {
 
   return (
     <motion.section
-      className="flex flex-col pt-[114px] md:pt-[67px] lg:pt-[144px] items-center justify-center text-[30px] md:text-[38px] font-bold"
+      className="flex flex-col pt-[114px] md:pt-[67px] md:pb-[67px] lg:py-[144px] pb-[114px] items-center justify-center text-[30px] md:text-[38px] font-bold"
       ref={ref}
       initial="hidden"
       animate={ctrls}
       variants={bodyAnimation}
     >
-      <motion.h2 variants={childAnimation}>Let&apos;s Work together.</motion.h2>
+      <motion.h2 variants={childAnimation}>Let&apos;s work together.</motion.h2>
       <motion.h2
         className="text-[#7f7f7f] hover:text-[#7f7f7f]/50 cursor-pointer -mt-2"
         variants={child2Animation}
       >
-        Get in touch
+        Get in touch.
       </motion.h2>
     </motion.section>
   );

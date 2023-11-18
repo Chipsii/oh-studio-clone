@@ -1,8 +1,8 @@
-import { useAnimation, motion } from "framer-motion";
-import { useEffect } from "react";
-import { useInView } from "react-intersection-observer";
-import { projectDetails } from "./ProjectDetails";
 import ProjectCard from "./ProjectCard";
+import { projectDetails } from "./ProjectDetails";
+import { useEffect } from "react";
+import { useAnimation, motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const Work = () => {
   const ctrls = useAnimation();
@@ -44,10 +44,10 @@ const Work = () => {
     >
       <motion.div
         className="grid w-[92%] max-w-[1320px] grid-cols-1 grid-rows-12 place-content-center place-items-center gap-x-5 gap-y-7 md:gap-y-10 md:grid-cols-2 md:grid-rows-6"
-        arial-hidden="true"
-        variants={bodyAnimation}
-        animate={ctrls}
+        aria-hidden="true"
         initial="hidden"
+        animate={ctrls}
+        variants={bodyAnimation}
       >
         {projectDetails.map((project, index) => {
           return (

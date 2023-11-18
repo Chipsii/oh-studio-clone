@@ -1,20 +1,20 @@
 import "./App.css";
-import Footer from "./Footer/Footer";
-import ShopBtn from "./Footer/ShopBtn";
-import Hero from "./Hero/Hero";
 import Navbar from "./NavBar/Navbar";
+import Hero from "./Hero/Hero";
 import Work from "./Work/Work";
 import Contact from "./contact/Contact";
+import Footer from "./Footer/Footer";
+import ShopBtn from "./Footer/ShopBtn";
 
 function App() {
   return (
-    <div className="flex flex-col relative">
-      <Navbar/>
-      <Hero/>
-      <Work/>
-      <Contact/>
-      <Footer/>
-      <ShopBtn/>
+    <div className="relative flex flex-col">
+      <Navbar />
+      <Hero />
+      <Work />
+      <Contact />
+      <Footer />
+      <ShopBtn />
     </div>
   );
 }
